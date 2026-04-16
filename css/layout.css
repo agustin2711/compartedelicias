@@ -19,7 +19,7 @@
 .navbar__logo {
   width: clamp(140px, 18vw, 175px);
   height: auto;
-  max-height: 85px;
+  max-height: calc(86px - 20px);
   object-fit: contain;
 }
 
@@ -70,6 +70,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  align-items: stretch;
 }
 
 .catalog__actions {
@@ -121,7 +122,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 3px;
   font-family: var(--font-body);
   font-size: clamp(1rem, 2.1vw, 1.65rem);
   font-weight: 500;

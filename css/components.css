@@ -96,6 +96,7 @@
   border: var(--border-main);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
+  height: 100%;
 }
 
 .product-card__title {
@@ -115,6 +116,8 @@
   padding: 15px;
   background: var(--color-surface-2);
   border-radius: var(--radius-md);
+  height: 100%;
+  flex: 1;
 }
 
 .product-card__imageWrap {
@@ -148,11 +151,12 @@
   line-height: 1.1;
   color: var(--color-text);
   text-align: center;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .btn--order,
 .btn--more {
-  width: 40%;
   min-height: 56px;
   margin: 25px auto 0;
   padding: 12px 18px;
@@ -166,6 +170,7 @@
 
 .btn--order {
   background: var(--color-accent);
+  margin-top: 0px;
 }
 
 .btn--order:hover {
@@ -241,8 +246,12 @@
     min-height: calc(100vh - 92px);
   }
 
-  .btn--order,
-  .btn--more {
+  .btn--order {
     width: 78%;
+    
   }
+}
+
+  .btn--more {
+  width: 30%; 
 }

@@ -28,7 +28,11 @@ window.Render = {
     grid.innerHTML = visibleProducts.map((product) => this.productCard(product)).join("");
 
     if (loadMoreBtn) {
-      loadMoreBtn.hidden = visibleCount >= products.length;
+      if (visibleCount >= products.length) {
+        loadMoreBtn.style.display = "none";
+      } else {
+        loadMoreBtn.style.display = "inline-block";
+      }
     }
   },
 };

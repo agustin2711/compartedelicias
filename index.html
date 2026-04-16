@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pastelería artesanal con producción a pedido, productos personalizados y opciones del día. Hacé tu pedido por WhatsApp."
+    />
+    <meta name="theme-color" content="#fdeee6" />
+    <meta property="og:title" content="Comparte Delicias - Pastelería Artesanal" />
+    <meta property="og:description" content="Pastelería artesanal con producción a pedido. Hecho especialmente para vos." />
+    <meta property="og:image" content="URL_A_TU_IMAGEN_DE_PREVISUALIZACION.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="img/icono.svg"/>
+    <title>Comparte Delicias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700;400;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+      <script src="js/state.js" defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/render.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+
+  <body>
+    <header class="navbar" role="banner">
+      <a class="navbar__brand" href="#hero" aria-label="Ir al inicio">
+        <img
+          src="img/logo.png"
+          alt="Logo de la pastelería"
+          class="navbar__logo"
+        />
+      </a>
+
+      <a
+        class="btn btn--nav"
+        href="https://wa.me/1150296966"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Hacer pedido por WhatsApp"
+      >
+        Hacé tu pedido
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <div class="hero__titleWrap">
+            <h1 id="hero-title" class="hero__title">Pastelería artesanal</h1>
+          </div>
+
+          <div class="hero__line hero__line--top">
+            <p>Producción a pedido para asegurar calidad en cada detalle</p>
+            <p>Productos personalizados</p>
+          </div>
+
+          <div class="hero__line hero__line--bottom">
+            <p>Hecho especialmente para vos, pensado para compartir</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <h2 id="catalog-title" class="section-heading__title">
+            Nuestros Productos
+          </h2>
+          <p class="section-heading__subtitle">
+            Elegí entre opciones por encargo y productos del día, preparados con
+            dedicación y pensados para cada ocasión.
+          </p>
+        </div>
+
+        <div
+          class="catalog__grid"
+          id="products-grid"
+          aria-live="polite"
+          aria-busy="false"
+        >
+          <!-- Cards renderizadas por JS -->
+        </div>
+
+        <div class="catalog__actions">
+          <button class="btn btn--more" id="load-more-btn" type="button">
+            Ver más
+          </button>
+        </div>
+      </section>
+
+      <section class="banner" aria-labelledby="banner-title">
+        <div class="banner__overlay" aria-hidden="true"></div>
+        <img
+          class="banner__image"
+          src="img/banner.jpg"
+          alt="Productos de pastelería artesanal"
+          loading="lazy"
+        />
+        <div class="banner__content">
+          <h2 id="banner-title" class="banner__title">
+            Comparte Delicias
+          </h2>
+          <p class="banner__subtitle">
+            Porque lo bueno se comparte
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="footer"
+      role="contentinfo"
+      aria-label="Información de contacto"
+    >
+      <a
+        class="footer__item"
+        href="https://wa.me/1150296966"
+      >
+        <img src="img/icons/whatsapp.svg" alt="WhatsApp" class="footer__icon" />
+        <span>11 5029-6966</span>
+      </a>
+
+      <a
+        class="footer__item"
+        href="https://www.instagram.com/compartedelicias"
+      >
+        <img
+          src="img/icons/instagram.svg"
+          alt="Instagram"
+          class="footer__icon"
+        />
+        <span>compartedelicias</span>
+      </a>
+
+      <a
+        class="footer__item"
+        href="https://www.facebook.com/compartedelicias"
+      >
+        <img src="img/icons/facebook.svg" alt="Facebook" class="footer__icon" />
+        <span>compartedelicias</span>
+      </a>
+
+      <div class="footer__item">
+        <img
+          src="img/icons/location.svg"
+          alt="Ubicación"
+          class="footer__icon"
+        />
+        <span>Villa Lugano, CABA</span>
+      </div>
+    </footer>
+  </body>
+</html>

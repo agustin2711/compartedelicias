@@ -135,7 +135,7 @@
 }
 
 .product-card__description {
-  margin: 15px 10px;
+  margin: 10px;
   font-family: var(--font-body);
   font-size: 0.875rem;
   line-height: 1.6;
@@ -187,6 +187,7 @@
 
 .btn--more {
   background: var(--color-card);
+  width: 60%;
 }
 
 .btn--more:hover {
@@ -231,6 +232,10 @@
   .hero__line--bottom {
     font-size: clamp(1.45rem, 2vw, 1.9rem);
   }
+  .btn--more {
+  width: 40%;
+}
+
 }
 
 @media (min-width: 920px) {
@@ -250,8 +255,8 @@
     width: 78%;
     
   }
+  .btn--more {
+  width: 30%;
+}
 }
 
-  .btn--more {
-  width: 30%; 
-}
